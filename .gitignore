@@ -1,0 +1,6 @@
+source_base/AutoDev_IQ_BE/indexed_projects/
+source_base/AutoDev_IQ_BE/__pycache__/
+.idea/
+node_modules/
+source_base/AutoDev_IQ_BE/app/dom_diff_outputs
+source_base/AutoDev_IQ_BE/dom_diff_outputs

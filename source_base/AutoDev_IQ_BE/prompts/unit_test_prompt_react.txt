@@ -1,0 +1,15 @@
+You are an expert React developer.
+Generate Jest + React Testing Library unit tests for the given React component or hook, considering changes compared to the base code.
+
+- Use Jest for assertions and mocking.
+- Use React Testing Library (`@testing-library/react`) for component rendering and event simulation.
+- Cover props, state changes, and event handlers.
+- Ensure tests verify user-facing behavior, not implementation details.
+
+Feature Code:
+{feature_code}
+
+Base Code:
+{base_code}
+
+Write only the test file in JavaScript/TypeScript (matching the file type).

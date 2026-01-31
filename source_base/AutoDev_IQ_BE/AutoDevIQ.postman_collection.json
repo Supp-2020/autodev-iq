@@ -1,0 +1,340 @@
+{
+	"info": {
+		"_postman_id": "50087833-8866-4b69-bc7d-846a34134bd3",
+		"name": "AutoDevIQ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13283684",
+		"_collection_link": "https://warped-rocket-736343.postman.co/workspace/Centura~ec390467-ab29-4bef-9f16-bc420d7bef96/collection/13283684-50087833-8866-4b69-bc7d-846a34134bd3?action=share&source=collection_link&creator=13283684"
+	},
+	"item": [
+		{
+			"name": "Upload/Analyse",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"git_url\": \"https://github.com/BaljeetSinghMalhotra/product-service.git\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/upload",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload feature",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"git_url\": \"https://github.com/BaljeetSinghMalhotra/product-service.git\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/upload",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ASK",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"project_id\": \"product-service__feature_test-method-add\",\r\n  \"question\": \"write test method for my code changes\",\r\n  \"max_docs\": 50,\r\n  \"prompt_type\": \"unit_test_prompt\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/ask",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Feature Branch",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/list-feature-branches?project_id=product-service",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"list-feature-branches"
+					],
+					"query": [
+						{
+							"key": "project_id",
+							"value": "product-service"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Projects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/projects",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"projects"
+					]
+				},
+				"description": "Generated from cURL: curl -X GET http://localhost:8000/projects\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Generate Unit Test",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"project_id\": \"product-service__feature_test-method-add\",\r\n    \"file_name\": \"ProductServiceImpl.java\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/generate-unit-test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"generate-unit-test"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8000/generate-unit-test \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -d '{\r\n    \"project_id\": \"product-service__feature_cart-discount\"\r\n  }'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Clone Feature",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"git_url\": \"https://github.com/Supp-2020/password-validation\",\r\n    \"branch\": \"feature/validation\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/clone-feature-branch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"clone-feature-branch"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8000/clone-feature-branch \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -d '{\r\n    \"git_url\": \"https://github.com/your-org/your-repo.git\",\r\n    \"branch\": \"feature/add-payment-ui\"\r\n  }'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Run React",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"project_path\": \"/absolute/path/to/react-app\",\r\n    \"project_id\": \"todo-app\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/run-react",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"run-react"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8000/run-react \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -d '{\r\n    \"project_path\": \"/absolute/path/to/react-app\",\r\n    \"project_id\": \"todo-app\"\r\n  }'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Run Visual Regression",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"base_url\": \"http://localhost:58454\",\r\n    \"test_url\": \"http://localhost:59136\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/run-vrt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"run-vrt"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8000/run-vrt \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -d '{\r\n    \"base_url\": \"https://example.com/reference-page\",\r\n    \"test_url\": \"https://example.com/test-page\"\r\n}'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Stop React App",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/stop-container?container_name=my_container",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"stop-container"
+					],
+					"query": [
+						{
+							"key": "container_name",
+							"value": "my_container"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl -X POST \"http://localhost:8000/stop-container?container_name=my_container\"\r\n"
+			},
+			"response": []
+		}
+	]
+}

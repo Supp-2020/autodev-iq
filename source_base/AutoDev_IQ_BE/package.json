@@ -1,0 +1,10 @@
+{
+  "name": "babel-runner",
+  "version": "1.0.0",
+  "dependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/parser": "^7.24.0",
+    "@babel/traverse": "^7.24.0",
+    "backstopjs": "^6.3.25"
+  }
+}

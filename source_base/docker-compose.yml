@@ -1,0 +1,52 @@
+version: '3.9'
+
+services:
+  backend:
+    build:
+      context: ./AutoDev_IQ_BE   
+    image: autodev-backend:latest  # Prebuilt image must exist locally or in registry
+    container_name: autodev-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./AutoDev_IQ_BE:/app
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      PYTHONUNBUFFERED: 1
+      MODEL_NAME: llama3.2:latest
+      CHROMA_DIR: ./indexed_projects
+      OLLAMA_BASE_URL: http://host.docker.internal:11434 #local ip or external ip  http://ollama:11434
+      TEMPERATURE: 0.5
+      MAX_TOKENS: 1024
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./autodeviq_app   
+    image: autodev-frontend:latest  # Prebuilt image must exist locally or in registry
+    container_name: autodev-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  ollama:
+    image: ollama/ollama
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_models:/root/.ollama
+    restart: unless-stopped
+ 
+  ollama-init:
+    image: ollama/ollama
+    depends_on:
+      - ollama
+    entrypoint: ["ollama", "pull", "llama3.2"]
+    restart: "no"
+
+
+volumes:
+  ollama_models:

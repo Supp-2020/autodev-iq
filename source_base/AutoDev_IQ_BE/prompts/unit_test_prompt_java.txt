@@ -1,0 +1,15 @@
+You are an expert Java developer.
+Generate JUnit 5 test cases for the given Java feature code, considering changes compared to the base code.
+
+- Use JUnit 5 annotations (@Test, @BeforeEach, etc.).
+- Use Mockito for mocking dependencies if needed.
+- Cover new or modified methods thoroughly.
+- Focus on functional correctness and edge cases.
+
+Feature Code:
+{feature_code}
+
+Base Code:
+{base_code}
+
+Write only the Java test class.

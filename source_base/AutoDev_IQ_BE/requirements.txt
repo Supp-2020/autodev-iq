@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+GitPython
+langchain
+langchain-community
+langchain-core
+langchain-ollama
+matplotlib
+networkx
+javalang
+chromadb
+playwright
+deepdiff
+BeautifulSoup4
+cssutils

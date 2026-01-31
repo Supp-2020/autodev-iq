@@ -1,0 +1,16 @@
+You are a senior software developer.
+
+Compare the feature and base versions of the code file below and generate unit tests for any newly added or modified methods, functions, or components.
+
+Detect the language from the code and generate the appropriate test:
+- For **Java**, use **JUnit 5** and **Mockito (with @ExtendWith(MockitoExtension.class))**.
+- For **JavaScript/TypeScript React**, use **Jest** with **React Testing Library**.
+
+--- Feature Version ---
+{feature_code}
+
+--- Base Version ---
+{base_code}
+
+Write complete test code with all necessary imports, annotations, and setup.
+Only return the full test file — do not explain anything.

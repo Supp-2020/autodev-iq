@@ -1,0 +1,32 @@
+[
+  {
+    "firstName": "Aastha",
+    "lastName": "Singh",
+    "email": "testuser.01@yopmail.com",
+    "password": "$2b$12$hUOCFnX7RyuUb6DQlEcnruSl9IamwTs.vVCWpQadZsttpi6l/fe8W"
+  },
+  {
+    "firstName": "Chandana",
+    "lastName": "N",
+    "email": "testuser.02@yopmail.com",
+    "password": "$2b$12$knPaQbkDdpLPVk5LKBRwT.7E/kd.Vyi.UBlpg4TGv2OGIzJz40Dna"
+  },
+  {
+    "firstName": "Kruthik",
+    "lastName": "B",
+    "email": "testuser.03@yopmail.com",
+    "password": "$2b$12$QI/Y.QvMhyk0PzXo4xj8Ru/YjCwwfDi5JbEBIEuvWmRY6HewP2zxS"
+  },
+  {
+    "firstName": "Supreet",
+    "lastName": "Pradhan",
+    "email": "testuser.04@yopmail.com",
+    "password": "$2b$12$2PJWMMj9/4iYpX3LJq/TQu6fL84hK.gDmPKxW9nQ8UFOobgLOx.1O"
+  },
+  {
+    "firstName": "Baljeet",
+    "lastName": "Singh",
+    "email": "testuser.05@yopmail.com",
+    "password": "$2b$12$L2CCDtZdbRQXNXGt1JoakOE2Yta/FH8Jz/rEaWNSwdl4Q4Orv9mT."
+  }
+]
