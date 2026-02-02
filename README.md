@@ -31,13 +31,17 @@
 | Layer            | Tools / Frameworks                                        |
 | ---------------- | --------------------------------------------------------- |
 | Frontend         | Next.js, Material UI,React Icons, Framer Motions, Mermaid |
-| Backend API      | Node.js, Python,FastAPI                                   |
+| Backend API      | Node.js, Python,FastAPI, Lanchain                         |
 | LLM Interface    | Local model via Ollama - lama3.2, llava                   |
 | Embedding Engine | FAISS, Transformers (CodeBERT, MiniLM)                    |
 | UI Testing       | Playwright, backstopjs                                    |
-| Visual Testing   | Percy CLI                                                 |
 | Diagram Engine   | Mermaid.js (LLM-generated syntax)                         |
 | Containerization | Docker, Docker Compose                                    |
+---
+
+## 🎪 Architecture
+![Architectural Diagram](docs/assets/architecture.jpg)
+
 ---
 
 ## 📂 Project Structure
