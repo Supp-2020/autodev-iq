@@ -109,7 +109,7 @@ autodeviq_app/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/IN-Valtech/AutoDevIQ.git
+   git clone https://github.com/Supp-2020/autodev-iq.git
    cd source_base
    ```
 
